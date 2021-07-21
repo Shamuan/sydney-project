@@ -57,6 +57,9 @@ h2::before{
     border: none;
     padding: 0;
 }
+.my-navbar>div>li{
+    text-align: center;
+}
 .my-navbar>div>li>a{
     font-family: 'Open Sans';
     font-size: 13px;
@@ -66,17 +69,17 @@ h2::before{
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
-}
-.my-navbar>div>li>a:hover{
-    border-bottom: 1px solid white;
-}
-
-.my-navbar>div>li{
-    border: 1px solid white;
+    border-bottom: 1px solid transparent;
+    display: inline-block;
 }
 @media screen and (min-width:576px){
+.my-navbar>div>li>a:hover{
+    border-bottom: 1px solid white;
+    }
+}
+@media screen and (max-width:576px){
     .my-navbar>div>li{
-        border: none;
+        border: 1px solid white;
     }
 }
 @media screen and (min-width:992px){
