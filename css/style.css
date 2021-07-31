@@ -35,6 +35,9 @@ h2::before{
     background-color: #9e171d;
     top: 132px;
 }
+input, textarea, select{
+    outline:none;
+}
 .navbar-toggler-icon{
     background-image: url('../images/css_sprites.png')!important;
     width: 41px; 
@@ -208,10 +211,12 @@ h2::before{
       bottom: 0;
       background: #0E0E0E;
       opacity: .8;
+      transition: all 1s ease;
 }
 .service>div:hover::before{
       background: #9E171D;
       opacity: .8;
+      transition: all 1s ease;
 }
 
 .box-car>h3{
